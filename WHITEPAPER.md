@@ -3,9 +3,9 @@
 **Title:** Kindly: Decentralized On-Chain Mutual Aid Protocol  
 **Tagline:** Small Requests. Real Help.  
 **Version:** 1.0  
-**Network:** Botchain Testnet (Chain ID: `968`)  
-**Contract Address:** `0x4e000F7bFf35780C890CdDCBe986013A579a62A9`  
-**Explorer:** [https://scan.bohr.life/address/0x4e000F7bFf35780C890CdDCBe986013A579a62A9](https://scan.bohr.life/address/0x4e000F7bFf35780C890CdDCBe986013A579a62A9)  
+**Network:** Botchain Mainnet (Chain ID: `677`)  
+**Contract Address:** `0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d`  
+**Explorer:** [https://scan.botchain.ai/address/0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d](https://scan.botchain.ai/address/0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d)  
 **GitHub Repository:** [https://github.com/liljhnxn/Kindly](https://github.com/liljhnxn/Kindly)
 
 ---
@@ -14,7 +14,7 @@
 
 In today's hyper-monetized digital economy, communities lack an authentic, trustless, and zero-friction venue for mutual assistance. Asking for small help—whether technical troubleshooting, design feedback, math tutoring, or local community support—often requires navigating algorithmic engagement traps, paid gig platforms laden with fees, or opaque centralized forums prone to spam.
 
-**Kindly** is a decentralized, zero-fee community mutual aid protocol built on the Botchain Testnet. Kindly allows any individual with a Web3 wallet to publish a request for assistance and provides a transparent on-chain medium where peers can volunteer their skills and time. By deliberately eschewing platform fees, governance tokens, and intermediary databases, Kindly creates an immutable, verifiable public record of human altruism and cooperation.
+**Kindly** is a decentralized, zero-fee community mutual aid protocol built on Botchain Mainnet. Kindly allows any individual with a Web3 wallet to publish a request for assistance and provides a transparent on-chain medium where peers can volunteer their skills and time. By deliberately eschewing platform fees, governance tokens, and intermediary databases, Kindly creates an immutable, verifiable public record of human altruism and cooperation.
 
 ---
 
@@ -43,9 +43,9 @@ Kindly offers a radically simplified paradigm: **Pure, Tokenless Social Coordina
 
 ## 4. Why Botchain?
 
-Kindly chose **Botchain Testnet** (`Chain ID: 968`) because real-time community interaction requires:
+Kindly chose **Botchain Mainnet** (`Chain ID: 677`) because real-time community interaction requires:
 - **Fast Block Times**: Rapid transaction confirmation for dynamic volunteering workflows.
-- **Negligible Transaction Costs**: Enables users to volunteer and coordinate without prohibitive gas expenses.
+- **Negligible Transaction Costs**: Enables users to volunteer and coordinate without prohibitive gas expenses (native token: BOT).
 - **EVM Compatibility**: Standard Solidity tooling (Hardhat, Viem, Wagmi) allows for verifiable contracts and robust developer ergonomics.
 
 ---
@@ -65,15 +65,15 @@ Kindly adheres to an uncompromising minimalist architecture:
                             │
                             ▼
 ┌────────────────────────────────────────────────────────┐
-│                  Botchain Testnet                      │
-│             RPC: https://rpc.bohr.life                 │
-│                 [Chain ID: 968]                        │
+│                  Botchain Mainnet                      │
+│             RPC: https://rpc.botchain.ai               │
+│                 [Chain ID: 677]                        │
 └───────────────────────────┬────────────────────────────┘
                             │
                             ▼
 ┌────────────────────────────────────────────────────────┐
 │                  Kindly.sol Contract                   │
-│      Address: 0x4e000F7bFf35780C890CdDCBe986013A579a   │
+│      Address: 0xf4d84d1977Dc4421b2E32C42Dd95e0844f277   │
 │             State: Open -> InProgress -> Completed      │
 └────────────────────────────────────────────────────────┘
 ```
@@ -137,7 +137,7 @@ If a requester no longer requires help and no volunteer has claimed the request:
 
 ## 8. Roadmap
 
-- **Phase 1 (Complete)**: Architecture design, Solidity contract deployment, Hardhat test suite, Next.js frontend, and Botchain Testnet deployment.
+- **Phase 1 (Complete)**: Architecture design, Solidity contract deployment, Hardhat test suite, Next.js frontend, and Botchain Mainnet deployment.
 - **Phase 2 (Current)**: Community onboarding, hackathon showcase, and peer-to-peer testing.
 - **Phase 3**: On-chain soulbound karma badges / non-transferable Proof of Kindness certificates for top community volunteers.
 - **Phase 4**: Multi-language localization and optional decentralized messaging (XMTP) for direct helper-requester coordination.
@@ -147,3 +147,4 @@ If a requester no longer requires help and no volunteer has claimed the request:
 ## 9. Conclusion
 
 Kindly demonstrates that blockchain utility extends far beyond financial speculation. By leveraging the Botchain network for trustless, transparent, and fee-free community aid, Kindly empowers everyday people to connect, collaborate, and make small acts of kindness count.
+

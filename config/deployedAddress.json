@@ -1,6 +1,9 @@
 {
-  "address": "0x4e000F7bFf35780C890CdDCBe986013A579a62A9",
-  "chainId": 968,
-  "networkName": "Botchain Testnet",
-  "deployedAt": "2026-11-05T08:07:52.932Z"
+  "address": "0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d",
+  "chainId": 677,
+  "networkName": "Botchain Mainnet",
+  "explorer": "https://scan.botchain.ai/address/0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d",
+  "gasUsed": "1133621",
+  "deploymentCost": "0.02267242",
+  "deployedAt": "2026-11-12T15:39:14.177Z"
 }

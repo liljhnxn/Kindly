@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useAccount, useConnect, useDisconnect, useChainId, useSwitchChain } from "wagmi";
-import { botchainTestnet } from "@/config/chain";
+import { botchainMainnet } from "@/config/chain";
 import { shortenAddress } from "@/lib/utils";
 import { Wallet, LogOut, ExternalLink, Copy, Check, AlertTriangle, Plus, HeartHandshake } from "lucide-react";
 
@@ -21,7 +21,7 @@ export function Navbar({ onOpenCreate, onNavigate }: NavbarProps) {
   const [copied, setCopied] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const isWrongNetwork = isConnected && chainId !== botchainTestnet.id;
+  const isWrongNetwork = isConnected && chainId !== botchainMainnet.id;
 
   const handleCopy = () => {
     if (address) {
@@ -56,7 +56,7 @@ export function Navbar({ onOpenCreate, onNavigate }: NavbarProps) {
                 Kindly
               </span>
               <span className="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-forest-100 text-forest-800 border border-forest-200">
-                Web3
+                Mainnet
               </span>
             </div>
             <p className="text-xs text-charcoal-500 font-medium">Small Requests. Real Help.</p>
@@ -91,12 +91,12 @@ export function Navbar({ onOpenCreate, onNavigate }: NavbarProps) {
           {/* Wrong Network Warning */}
           {isWrongNetwork && (
             <button
-              onClick={() => switchChain({ chainId: botchainTestnet.id })}
+              onClick={() => switchChain({ chainId: botchainMainnet.id })}
               disabled={isSwitching}
               className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-full bg-amber-100 text-amber-900 border border-amber-300 hover:bg-amber-200 transition-colors animate-pulse"
             >
               <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
-              <span>{isSwitching ? "Switching..." : "Switch to Botchain"}</span>
+              <span>{isSwitching ? "Switching..." : "Switch to Botchain Mainnet"}</span>
             </button>
           )}
 
@@ -104,7 +104,7 @@ export function Navbar({ onOpenCreate, onNavigate }: NavbarProps) {
           {isConnected && !isWrongNetwork && (
             <div className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-forest-50 border border-forest-200 text-xs font-medium text-forest-800">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>Botchain Testnet</span>
+              <span>Botchain Mainnet</span>
             </div>
           )}
 
@@ -161,24 +161,24 @@ export function Navbar({ onOpenCreate, onNavigate }: NavbarProps) {
                       </button>
 
                       <a
-                        href={`https://scan.bohr.life/address/${address}`}
+                        href={`https://scan.botchain.ai/address/${address}`}
                         target="_blank"
                         rel="noreferrer"
                         className="w-full flex items-center justify-between px-3 py-2 text-xs font-medium text-charcoal-700 hover:bg-ivory-100 rounded-xl transition-colors"
                       >
                         <span className="flex items-center gap-2">
                           <ExternalLink className="w-4 h-4 text-charcoal-500" />
-                          View on Bohr Scan
+                          View on Botchain Scan
                         </span>
                       </a>
 
                       {isWrongNetwork && (
                         <button
-                          onClick={() => switchChain({ chainId: botchainTestnet.id })}
+                          onClick={() => switchChain({ chainId: botchainMainnet.id })}
                           className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-amber-800 bg-amber-50 hover:bg-amber-100 rounded-xl transition-colors"
                         >
                           <AlertTriangle className="w-4 h-4 text-amber-600" />
-                          Switch to Botchain
+                          Switch to Botchain Mainnet
                         </button>
                       )}
 
@@ -203,4 +203,3 @@ export function Navbar({ onOpenCreate, onNavigate }: NavbarProps) {
     </header>
   );
 }
-

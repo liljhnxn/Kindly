@@ -2,7 +2,7 @@
 
 > **Small Requests. Real Help.**
 
-Kindly is a Web3 community mutual aid platform built on the **Botchain Testnet**. It enables community members to request assistance with small tasks (education, tech, design, personal assistance, and neighborhood tasks) and allows peers to volunteer and help—with 100% of the state stored immutably on-chain.
+Kindly is a Web3 community mutual aid platform built on **Botchain Mainnet**. It enables community members to request assistance with small tasks (education, tech, design, personal assistance, and neighborhood tasks) and allows peers to volunteer and help—with 100% of the state stored immutably on-chain.
 
 ---
 
@@ -10,22 +10,23 @@ Kindly is a Web3 community mutual aid platform built on the **Botchain Testnet**
 
 - **Exactly ONE Webpage**: Built using Next.js App Router as a seamless single-page application (`app/page.tsx`). Modals and in-page sections handle all user workflows—no additional routes or pages exist.
 - **Exactly ONE Smart Contract**: All business logic, storage, and state transitions reside entirely within `contracts/Kindly.sol`.
-- **Zero Backend & Zero Database**: Directly interfaces with the Botchain Testnet using `wagmi` and `viem`. No private servers, centralized databases, or indexing relays.
+- **Zero Backend & Zero Database**: Directly interfaces with Botchain using `wagmi` and `viem`. No private servers, centralized databases, or indexing relays.
 - **No Tokens, No NFTs, No Payments**: Pure social mutual aid and community cooperation.
 - **Real Blockchain Interactions**: Real MetaMask wallet connection, custom Botchain network detection/switching, gas estimations, and on-chain event listening.
 - **Distinctive Human-Centric Design**: Steers away from generic purple/blue crypto dashboards, embracing a warm ivory background, deep forest green accents, terracotta highlights, and elegant serif typography.
 
 ---
 
-## ✦ Network Details: Botchain Testnet
+## ✦ Network Details: Botchain Mainnet
 
 | Parameter | Value |
 | :--- | :--- |
-| **Network Name** | Botchain Testnet |
-| **Chain ID** | `968` |
-| **Native Currency** | BOHR |
-| **RPC Endpoint** | `https://rpc.bohr.life` |
-| **Block Explorer** | [https://scan.bohr.life](https://scan.bohr.life) |
+| **Network Name** | Botchain Mainnet |
+| **Chain ID** | `677` |
+| **Native Currency** | BOT |
+| **RPC Endpoint** | `https://rpc.botchain.ai` |
+| **Block Explorer** | [https://scan.botchain.ai](https://scan.botchain.ai) |
+| **Verified Contract** | [`0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d`](https://scan.botchain.ai/address/0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d#code) |
 
 ---
 
@@ -116,10 +117,10 @@ cp .env.example .env
 ```
 Fill in the variables:
 ```env
-BOTCHAIN_RPC_URL=https://rpc.bohr.life
-NEXT_PUBLIC_RPC_URL=https://rpc.bohr.life
-NEXT_PUBLIC_CHAIN_ID=968
-NEXT_PUBLIC_KINDLY_CONTRACT_ADDRESS=0x...
+BOTCHAIN_RPC_URL=https://rpc.botchain.ai
+NEXT_PUBLIC_RPC_URL=https://rpc.botchain.ai
+NEXT_PUBLIC_CHAIN_ID=677
+NEXT_PUBLIC_KINDLY_CONTRACT_ADDRESS=0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d
 PRIVATE_KEY=your_private_key_for_deployment
 ```
 
@@ -151,11 +152,11 @@ The test suite validates:
 
 ---
 
-## ✦ Deploying to Botchain Testnet
+## ✦ Deploying to Botchain Mainnet
 
-Deploy the contract to Botchain Testnet:
+Deploy the contract to Botchain Mainnet:
 ```bash
-npx hardhat run scripts/deploy.js --network botchain
+npx hardhat run scripts/deploy.js --network botchainMainnet
 ```
 
 The script will:

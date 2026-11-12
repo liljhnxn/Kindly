@@ -220,5 +220,5 @@ export type Category = (typeof CATEGORIES)[number];
 // Fallback address if not set in environment or deployment
 export const DEFAULT_CONTRACT_ADDRESS: `0x${string}` =
   (process.env.NEXT_PUBLIC_KINDLY_CONTRACT_ADDRESS as `0x${string}`) ||
-  "0x4e000F7bFf35780C890CdDCBe986013A579a62A9";
+  "0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d";
 

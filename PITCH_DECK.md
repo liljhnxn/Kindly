@@ -1,9 +1,9 @@
 # Kindly Pitch Deck
 
 > **Tagline:** Small Requests. Real Help.  
-> **Platform:** Decentralized Community Mutual Aid on Botchain Testnet  
+> **Platform:** Decentralized Community Mutual Aid on Botchain Mainnet  
 > **Repository:** [https://github.com/liljhnxn/Kindly](https://github.com/liljhnxn/Kindly)  
-> **Live Contract:** `0x4e000F7bFf35780C890CdDCBe986013A579a62A9` on Botchain Testnet (Chain ID `968`)
+> **Live Contract:** `0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d` on Botchain Mainnet (Chain ID `677`)
 
 ---
 
@@ -11,7 +11,7 @@
 - **Project Name:** Kindly
 - **Tagline:** Small Requests. Real Help.
 - **Vision:** Rebuilding trust and digital community support through an immutable, fee-free mutual aid ledger.
-- **Ecosystem:** Built on Botchain Testnet (`Chain ID 968`)
+- **Ecosystem:** Built on Botchain Mainnet (`Chain ID 677`)
 - **Key Takeaway:** The first fully on-chain, zero-fee community help platform where small requests meet genuine human generosity.
 
 ---
@@ -33,7 +33,7 @@
 ---
 
 ## Slide 4: How It Works (The 3-Step Flow)
-1. **Request:** A user connects MetaMask to Botchain Testnet and submits a small request with title, category, and description.
+1. **Request:** A user connects MetaMask to Botchain Mainnet and submits a small request with title, category, and description.
 2. **Volunteer:** A community member spots an open request and clicks "Volunteer to Help", committing on-chain to assist.
 3. **Complete:** Once the request is fulfilled, the original requester clicks "Mark as Completed", recording the act of kindness forever.
 
@@ -60,8 +60,8 @@
 ## Slide 7: Technical Architecture
 - **Smart Contract:** Solidity `0.8.20` (`Kindly.sol`), fully optimized, 16/16 Hardhat unit tests passing.
 - **Frontend Stack:** Next.js App Router, TypeScript, Tailwind CSS, Viem, Wagmi.
-- **Blockchain:** Botchain Testnet (`Chain ID 968`, RPC `https://rpc.bohr.life`, Explorer `https://scan.bohr.life`).
-- **Auditability:** Contract verified on Botchain Scan: `0x4e000F7bFf35780C890CdDCBe986013A579a62A9`.
+- **Blockchain:** Botchain Mainnet (`Chain ID 677`, RPC `https://rpc.botchain.ai`, Explorer `https://scan.botchain.ai`).
+- **Auditability:** Contract verified on Botchain Scan: `0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d`.
 
 ---
 
@@ -74,10 +74,10 @@
 ---
 
 ## Slide 9: Growth & Roadmap
-- **Q1 (Delivered):** Core smart contract architecture, full test suite, single-page dApp, and Botchain deployment.
+- **Q1 (Delivered):** Core smart contract architecture, full test suite, single-page dApp, and Botchain Mainnet deployment.
 - **Q2:** Soulbound "Proof of Kindness" (PoK) badges to recognize and celebrate active volunteers.
 - **Q3:** Direct helper-to-requester peer messaging via decentralized protocols (XMTP).
-- **Q4:** Mainnet deployment on Botchain and ecosystem partnerships.
+- **Q4:** Ecosystem partnerships and multi-region localization.
 
 ---
 
@@ -86,5 +86,6 @@
 - **Tagline:** Small Requests. Real Help.
 - **Whitepaper:** [`WHITEPAPER.md`](https://github.com/liljhnxn/Kindly/blob/main/WHITEPAPER.md)
 - **GitHub Repository:** [https://github.com/liljhnxn/Kindly](https://github.com/liljhnxn/Kindly)
-- **Verified Smart Contract:** [Botchain Scan Link](https://scan.bohr.life/address/0x4e000F7bFf35780C890CdDCBe986013A579a62A9#code)
+- **Verified Smart Contract:** [Botchain Scan Link](https://scan.botchain.ai/address/0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d#code)
 - **Contact & Community:** [@botchain_ai](https://x.com/botchain_ai)
+

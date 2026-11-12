@@ -34,34 +34,34 @@ export function Footer({ contractAddress }: FooterProps) {
           {/* Network Details */}
           <div className="space-y-3">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-forest-300">
-              Botchain Testnet Network
+              Botchain Mainnet Network
             </h4>
             <ul className="space-y-2 text-xs text-forest-200/80">
               <li className="flex items-center justify-between py-1 border-b border-forest-900/60">
                 <span className="text-forest-400">Chain ID:</span>
-                <span className="font-mono text-white font-medium">968</span>
+                <span className="font-mono text-white font-medium">677</span>
               </li>
               <li className="flex items-center justify-between py-1 border-b border-forest-900/60">
                 <span className="text-forest-400">RPC Endpoint:</span>
                 <a
-                  href="https://rpc.bohr.life"
+                  href="https://rpc.botchain.ai"
                   target="_blank"
                   rel="noreferrer"
                   className="font-mono text-terracotta-300 hover:underline flex items-center gap-1"
                 >
-                  <span>rpc.bohr.life</span>
+                  <span>rpc.botchain.ai</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
               <li className="flex items-center justify-between py-1 border-b border-forest-900/60">
                 <span className="text-forest-400">Block Explorer:</span>
                 <a
-                  href="https://scan.bohr.life"
+                  href="https://scan.botchain.ai"
                   target="_blank"
                   rel="noreferrer"
                   className="font-mono text-terracotta-300 hover:underline flex items-center gap-1"
                 >
-                  <span>scan.bohr.life</span>
+                  <span>scan.botchain.ai</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
@@ -82,7 +82,7 @@ export function Footer({ contractAddress }: FooterProps) {
                 <p className="text-[11px] text-forest-400">Contract Address:</p>
                 {isAddressConfigured ? (
                   <a
-                    href={`https://scan.bohr.life/address/${contractAddress}`}
+                    href={`https://scan.botchain.ai/address/${contractAddress}`}
                     target="_blank"
                     rel="noreferrer"
                     className="font-mono text-xs text-terracotta-300 hover:underline flex items-center gap-1 mt-0.5 truncate"
@@ -103,10 +103,9 @@ export function Footer({ contractAddress }: FooterProps) {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-forest-300/60">
           <p>© {new Date().getFullYear()} Kindly. Small Requests. Real Help. 100% On-chain.</p>
-          <p>Decentralized Community Platform</p>
+          <p>Botchain Mainnet Community Platform</p>
         </div>
       </div>
     </footer>
   );
 }
-

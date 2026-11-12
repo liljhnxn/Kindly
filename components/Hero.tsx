@@ -72,7 +72,7 @@ export function Hero({
             </span>
             <span className="flex items-center gap-1.5">
               <Users className="w-4 h-4 text-forest-600" />
-              Botchain Testnet
+              Botchain Mainnet
             </span>
           </div>
         </div>

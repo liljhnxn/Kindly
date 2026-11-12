@@ -232,7 +232,7 @@ export function RequestDetailsModal({
                     )}
                   </button>
                   <a
-                    href={`https://scan.bohr.life/address/${request.requester}`}
+                    href={`https://scan.botchain.ai/address/${request.requester}`}
                     target="_blank"
                     rel="noreferrer"
                     className="p-1 text-charcoal-400 hover:text-forest-700 rounded transition-colors"
@@ -273,7 +273,7 @@ export function RequestDetailsModal({
                       )}
                     </button>
                     <a
-                      href={`https://scan.bohr.life/address/${request.volunteer}`}
+                      href={`https://scan.botchain.ai/address/${request.volunteer}`}
                       target="_blank"
                       rel="noreferrer"
                       className="p-1 text-charcoal-400 hover:text-forest-700 rounded transition-colors"

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1E4D3A"/>
+      <stop offset="60%" stop-color="#143628"/>
+      <stop offset="100%" stop-color="#0A1E16"/>
+    </radialGradient>
+
+    <!-- Warm Glow -->
+    <radialGradient id="warmGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E06D4B" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#E06D4B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Heart Gradient -->
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F28E6F"/>
+      <stop offset="50%" stop-color="#E06D4B"/>
+      <stop offset="100%" stop-color="#C55231"/>
+    </linearGradient>
+
+    <!-- Hands/Ribbon Accent Gradient -->
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F4"/>
+      <stop offset="100%" stop-color="#D7E5DC"/>
+    </linearGradient>
+
+    <!-- Soft drop shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Circular background for perfect crop -->
+  <rect width="512" height="512" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle ambient inner glow ring -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#2D6A52" stroke-width="2" opacity="0.3"/>
+  <circle cx="256" cy="256" r="180" fill="url(#warmGlow)"/>
+
+  <!-- Main Symbol Group -->
+  <g filter="url(#shadow)">
+    <!-- Central Heart -->
+    <path d="M256 360 C256 360 148 292 148 206 C148 162 182 130 224 130 C248 130 256 148 256 148 C256 148 264 130 288 130 C330 130 364 162 364 206 C364 292 256 360 256 360 Z"
+          fill="url(#heartGrad)" />
+
+    <!-- Supporting Hands / Caring Arc -->
+    <path d="M128 268 C128 344 192 400 256 400 C320 400 384 344 384 268 C384 250 364 246 354 260 C334 288 296 320 256 320 C216 320 178 288 158 260 C148 246 128 250 128 268 Z"
+          fill="url(#ribbonGrad)"
+          opacity="0.95"/>
+
+    <!-- Small Spark of Kindness (Center Accent) -->
+    <circle cx="256" cy="216" r="14" fill="#FFF9F5" filter="url(#glow)"/>
+    <path d="M256 194 L258 214 L278 216 L258 218 L256 238 L254 218 L234 216 L254 214 Z" fill="#FFF9F5" opacity="0.9"/>
+  </g>
+</svg>
+
