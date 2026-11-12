@@ -11,7 +11,7 @@ module.exports = {
     settings: {
       optimizer: {
         enabled: true,
-        runs: 200, // Keeps bytecode compact to minimize deployment gas
+        runs: 200,
       },
     },
   },
@@ -24,12 +24,6 @@ module.exports = {
       chainId: 677,
       accounts: privateKey ? [privateKey] : [],
     },
-    botchainTestnet: {
-      url: "https://rpc.bohr.life",
-      chainId: 968,
-      accounts: privateKey ? [privateKey] : [],
-    },
-    // Alias for backward compatibility
     botchain: {
       url: process.env.BOTCHAIN_MAINNET_RPC_URL || "https://rpc.botchain.ai",
       chainId: 677,
@@ -39,7 +33,6 @@ module.exports = {
   etherscan: {
     apiKey: {
       botchainMainnet: "empty",
-      botchainTestnet: "empty",
       botchain: "empty",
     },
     customChains: [
@@ -49,14 +42,6 @@ module.exports = {
         urls: {
           apiURL: "https://scan.botchain.ai/api",
           browserURL: "https://scan.botchain.ai",
-        },
-      },
-      {
-        network: "botchainTestnet",
-        chainId: 968,
-        urls: {
-          apiURL: "https://scan.bohr.life/api",
-          browserURL: "https://scan.bohr.life",
         },
       },
       {

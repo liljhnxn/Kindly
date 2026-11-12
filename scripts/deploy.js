@@ -6,11 +6,10 @@ async function main() {
   const [deployer] = await hre.ethers.getSigners();
   const network = await hre.ethers.provider.getNetwork();
   const chainId = Number(network.chainId);
-  const isMainnet = chainId === 677;
 
-  const currencySymbol = isMainnet ? "BOT" : "BOHR";
-  const explorerBase = isMainnet ? "https://scan.botchain.ai" : "https://scan.bohr.life";
-  const networkName = isMainnet ? "Botchain Mainnet" : "Botchain Testnet";
+  const currencySymbol = "BOT";
+  const explorerBase = "https://scan.botchain.ai";
+  const networkName = "BOT Chain";
 
   console.log("==================================================");
   console.log(`Deploying Kindly contract to ${networkName}...`);
@@ -32,7 +31,6 @@ async function main() {
 
   const Kindly = await hre.ethers.getContractFactory("Kindly");
   
-  // Deploy with exact optimal gasPrice
   const kindly = await Kindly.deploy({
     gasPrice: gasPrice,
   });
@@ -91,7 +89,6 @@ async function main() {
       envContent += `\nNEXT_PUBLIC_KINDLY_CONTRACT_ADDRESS=${contractAddress}\n`;
     }
 
-    // Update chain ID
     if (envContent.includes("NEXT_PUBLIC_CHAIN_ID=")) {
       envContent = envContent.replace(
         /NEXT_PUBLIC_CHAIN_ID=.*/,
@@ -99,8 +96,7 @@ async function main() {
       );
     }
 
-    // Update RPC URLs
-    const rpcUrl = isMainnet ? "https://rpc.botchain.ai" : "https://rpc.bohr.life";
+    const rpcUrl = "https://rpc.botchain.ai";
     if (envContent.includes("NEXT_PUBLIC_RPC_URL=")) {
       envContent = envContent.replace(
         /NEXT_PUBLIC_RPC_URL=.*/,

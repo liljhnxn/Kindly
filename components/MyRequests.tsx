@@ -154,7 +154,7 @@ export function MyRequests({
               Connect Your MetaMask Wallet
             </h3>
             <p className="text-xs text-charcoal-500 max-w-sm mx-auto mb-6">
-              Connect to Botchain Testnet to manage your requests, mark volunteers as completed, or review the help you promised to provide.
+              Connect to BOT Chain to manage your requests, mark volunteers as completed, or review the help you promised to provide.
             </p>
           </div>
         ) : (

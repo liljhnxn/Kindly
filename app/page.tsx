@@ -156,7 +156,7 @@ export default function HomePage() {
       {/* Contract address unconfigured alert banner if needed */}
       {(!contractAddress || contractAddress === "0x0000000000000000000000000000000000000000") && (
         <div className="bg-amber-100 border-b border-amber-300 text-amber-900 px-4 py-2 text-center text-xs font-medium">
-          Kindly contract is ready to deploy! Run <code className="bg-amber-200/80 px-1.5 py-0.5 rounded font-mono font-semibold">npm run deploy</code> to deploy to Botchain Testnet and set <code className="bg-amber-200/80 px-1.5 py-0.5 rounded font-mono font-semibold">NEXT_PUBLIC_KINDLY_CONTRACT_ADDRESS</code>.
+          Kindly contract is ready to deploy! Run <code className="bg-amber-200/80 px-1.5 py-0.5 rounded font-mono font-semibold">npm run deploy</code> to deploy to BOT Chain and set <code className="bg-amber-200/80 px-1.5 py-0.5 rounded font-mono font-semibold">NEXT_PUBLIC_KINDLY_CONTRACT_ADDRESS</code>.
         </div>
       )}
 

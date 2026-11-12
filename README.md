@@ -88,14 +88,22 @@ Kindly/
 │   ├── Footer.tsx              # Footer with network & contract links
 │   └── Providers.tsx           # Wagmi & React Query providers
 ├── config/
-│   ├── chain.ts                # Botchain Testnet chain configuration
+│   ├── chain.ts                # BOT Chain network configuration (Chain ID: 677)
 │   ├── contract.ts             # Contract ABI, types & constants
 │   └── wagmi.ts                # Wagmi configuration
-├── hardhat.config.js           # Hardhat config for Solidity 0.8.20 & Botchain
+├── hardhat.config.js           # Hardhat config for Solidity 0.8.20 & BOT Chain
 ├── tailwind.config.ts          # Custom color palette (Ivory, Forest, Terracotta)
 ├── .env.example                # Example environment variables
 └── package.json                # Dependencies and scripts
 ```
+
+---
+
+## ✦ BOT Chain Ecosystem Links
+
+- **BOT Chain Website**: [https://botchain.ai](https://botchain.ai)
+- **BOT Chain Explorer**: [https://scan.botchain.ai](https://scan.botchain.ai)
+- **Verified Contract**: [0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d](https://scan.botchain.ai/address/0xf4d84d1977Dc4421b2E32C42Dd95e0844f277D0d#code)
 
 ---
 
@@ -152,15 +160,15 @@ The test suite validates:
 
 ---
 
-## ✦ Deploying to Botchain Mainnet
+## ✦ Deploying to BOT Chain
 
-Deploy the contract to Botchain Mainnet:
+Deploy the contract to BOT Chain:
 ```bash
 npx hardhat run scripts/deploy.js --network botchainMainnet
 ```
 
 The script will:
-1. Deploy `Kindly.sol` to Botchain Testnet (Chain ID 968).
+1. Deploy `Kindly.sol` to BOT Chain (Chain ID 677).
 2. Output the deployed contract address and explorer link.
 3. Automatically export deployment info to `config/deployedAddress.json`.
 
@@ -180,8 +188,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Connect MetaMask to **Botchain Testnet**:
-- If MetaMask is connected to another network, Kindly will display a prompt to switch directly to Botchain Testnet with one click.
+Connect MetaMask to **BOT Chain**:
+- If MetaMask is connected to another network, Kindly will display a prompt to switch directly to BOT Chain with one click.
 - Create help requests, explore community tasks, volunteer, and track your contributions!
 
 ---

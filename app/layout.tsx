@@ -5,7 +5,7 @@ import { Providers } from "@/components/Providers";
 export const metadata: Metadata = {
   title: "Kindly | Small Requests. Real Help.",
   description:
-    "An on-chain community mutual aid platform on Botchain Testnet where people request help with small tasks and others volunteer to assist them.",
+    "An on-chain community mutual aid platform on BOT Chain where people request help with small tasks and others volunteer to assist them.",
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",
