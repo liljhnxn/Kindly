@@ -102,9 +102,14 @@ export function Navbar({ onOpenCreate, onNavigate }: NavbarProps) {
 
           {/* Network indicator pill when connected */}
           {isConnected && !isWrongNetwork && (
-            <div className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-forest-50 border border-forest-200 text-xs font-medium text-forest-800">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>Botchain Mainnet</span>
+            <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-forest-50 border border-forest-200 text-xs font-medium text-forest-800">
+              <img
+                src="/botchain-logo.png"
+                alt="BOT Chain"
+                className="w-3.5 h-3.5 rounded-sm object-contain"
+              />
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>BOT Chain</span>
             </div>
           )}
 

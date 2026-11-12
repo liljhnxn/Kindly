@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { HeartHandshake, ExternalLink, ShieldCheck, Globe, Cpu } from "lucide-react";
+import { HeartHandshake, ExternalLink, ShieldCheck } from "lucide-react";
 import { shortenAddress } from "@/lib/utils";
 
 interface FooterProps {
@@ -32,22 +32,29 @@ export function Footer({ contractAddress }: FooterProps) {
             </p>
           </div>
 
-          {/* BOT Chain Ecosystem Links (Required) */}
+          {/* BOT Chain Ecosystem Links (Required with Official Logo) */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
-                <Cpu className="w-3.5 h-3.5" />
-              </div>
+              <img
+                src="/botchain-logo.png"
+                alt="BOT Chain"
+                className="w-6 h-6 rounded-md object-contain border border-emerald-500/40 shadow-sm"
+              />
               <h4 className="text-xs font-semibold uppercase tracking-wider text-forest-300">
                 BOT Chain Ecosystem
               </h4>
             </div>
             
             <ul className="space-y-2.5 text-xs text-forest-200/80">
-              <li className="flex items-center justify-between py-1.5 px-3 rounded-xl bg-forest-900/50 border border-forest-800/80">
-                <span className="flex items-center gap-2 text-forest-300 font-medium">
-                  <Globe className="w-3.5 h-3.5 text-emerald-400" />
-                  BOT Chain Website:
+              {/* BOT Chain Website with Logo */}
+              <li className="flex items-center justify-between py-2 px-3 rounded-xl bg-forest-900/60 border border-forest-800 hover:border-emerald-500/50 transition-colors">
+                <span className="flex items-center gap-2.5 text-forest-200 font-medium">
+                  <img
+                    src="/botchain-logo.png"
+                    alt="BOT Chain"
+                    className="w-4 h-4 rounded-sm object-contain"
+                  />
+                  <span>BOT Chain Website:</span>
                 </span>
                 <a
                   href="https://botchain.ai"
@@ -55,15 +62,20 @@ export function Footer({ contractAddress }: FooterProps) {
                   rel="noreferrer"
                   className="font-mono text-terracotta-300 hover:text-terracotta-200 hover:underline flex items-center gap-1 font-semibold"
                 >
-                  <span>botchain.ai</span>
+                  <span>https://botchain.ai</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
 
-              <li className="flex items-center justify-between py-1.5 px-3 rounded-xl bg-forest-900/50 border border-forest-800/80">
-                <span className="flex items-center gap-2 text-forest-300 font-medium">
-                  <ExternalLink className="w-3.5 h-3.5 text-emerald-400" />
-                  BOT Chain Explorer:
+              {/* BOT Chain Explorer with Logo */}
+              <li className="flex items-center justify-between py-2 px-3 rounded-xl bg-forest-900/60 border border-forest-800 hover:border-emerald-500/50 transition-colors">
+                <span className="flex items-center gap-2.5 text-forest-200 font-medium">
+                  <img
+                    src="/botchain-logo.png"
+                    alt="BOT Chain"
+                    className="w-4 h-4 rounded-sm object-contain"
+                  />
+                  <span>BOT Chain Explorer:</span>
                 </span>
                 <a
                   href="https://scan.botchain.ai"
@@ -71,7 +83,7 @@ export function Footer({ contractAddress }: FooterProps) {
                   rel="noreferrer"
                   className="font-mono text-terracotta-300 hover:text-terracotta-200 hover:underline flex items-center gap-1 font-semibold"
                 >
-                  <span>scan.botchain.ai</span>
+                  <span>https://scan.botchain.ai</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
@@ -123,7 +135,12 @@ export function Footer({ contractAddress }: FooterProps) {
                   rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-[11px] text-emerald-400 hover:underline font-medium"
                 >
-                  <span>✓ Verified Contract Code on scan.botchain.ai</span>
+                  <img
+                    src="/botchain-logo.png"
+                    alt="BOT Chain"
+                    className="w-3.5 h-3.5 rounded-sm object-contain"
+                  />
+                  <span>✓ Verified Contract on scan.botchain.ai</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
@@ -139,18 +156,28 @@ export function Footer({ contractAddress }: FooterProps) {
               href="https://botchain.ai"
               target="_blank"
               rel="noreferrer"
-              className="text-forest-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 text-forest-300 hover:text-white transition-colors"
             >
-              BOT Chain
+              <img
+                src="/botchain-logo.png"
+                alt="BOT Chain"
+                className="w-3.5 h-3.5 rounded-sm object-contain"
+              />
+              <span>BOT Chain Website</span>
             </a>
             <span>•</span>
             <a
               href="https://scan.botchain.ai"
               target="_blank"
               rel="noreferrer"
-              className="text-forest-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 text-forest-300 hover:text-white transition-colors"
             >
-              Explorer
+              <img
+                src="/botchain-logo.png"
+                alt="BOT Chain"
+                className="w-3.5 h-3.5 rounded-sm object-contain"
+              />
+              <span>BOT Chain Explorer</span>
             </a>
           </div>
         </div>
